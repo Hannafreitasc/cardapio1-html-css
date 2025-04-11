@@ -6,12 +6,12 @@
   
   body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: #f9f9f9;
+    background: white;
     color: #333;
   }
   
   header {
-    background: linear-gradient(to right, #044d04,#90EE90);
+    background: linear-gradient(to right, rgb(68, 158, 68),#7aca80);
     color: white;
     padding: 20px;
     display: flex;
@@ -21,8 +21,8 @@
   }
   
   .logo {
-    width: 150px;
-    height: 100px;
+    width: 300px;
+    height: 170px;
   }
   
   .texto {
@@ -45,8 +45,8 @@
     text-align: center;
   }
   
-  .menu-section h2 {
-    font-size: 2rem;
+  .menu-section h2 { 
+    font-size: 2rem;  
     margin-bottom: 0.5rem;
     
   }
@@ -100,7 +100,7 @@
     background: white;
     min-height: 360px;
     border-radius: 12px;
-    overflow: hidden;
+    overflow:hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     transition: transform 0.3s;
   }
@@ -158,3 +158,34 @@
     right: 20px;
   }
 
+  @media (max-width: 767px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .logo {
+      width: 150px;
+      height: 100px;
+    }
+  
+    .texto {
+      font-size: 16px;
+    }
+  
+    .info {
+      font-size: 12px;
+    }
+  
+    .filters {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .botao-wpp {
+      width: 55px;
+      height: 55px;
+      font-size: 35px;
+    }
+  }
